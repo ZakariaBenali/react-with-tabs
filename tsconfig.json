@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"allowSyntheticDefaultImports": true,
+		"outDir": "dist",
+		"moduleResolution": "node",
+		"jsx": "react-jsx",
+		"allowJs": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitReturns": true,
+		"removeComments": true,
+		"resolveJsonModule": true,
+		"strict": true,
+		"target": "ES5",
+		"module": "ESNext",
+		"downlevelIteration": true,
+		"isolatedModules": true,
+		"lib": ["dom", "es5", "es6", "es7"],
+		"baseUrl": "src",
+		"jsxFactory": "",
+		"jsxFragmentFactory": ""
+	},
+	"exclude": ["dist/", ".parcelrc"]
+}

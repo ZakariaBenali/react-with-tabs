@@ -1,0 +1,55 @@
+{
+  "name": "react-with-tabs",
+  "version": "1.0.1",
+  "description": "A simple and lightweight tabs component without context",
+  "repository": "https://github.com/ZakariaBenali/react-with-tabs.git",
+  "author": "ZakariaBenali <benalizakaria.me@gmail.com>",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "prepublish": "tsc --noEmit",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.es.js"
+  },
+  "scripts": {
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "types:check": "tsc --noEmit",
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "keywords": [
+      "react",
+      "tabs",
+      "react-tabs",
+      "tabs-component",
+      "react-tabs-component",
+      "react-tabs-hoc"
+  ],
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react": "^7.32.2",
+    "microbundle": "^0.15.1",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.5"
+  }
+}
