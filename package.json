@@ -1,6 +1,6 @@
 {
   "name": "react-with-tabs",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A simple and lightweight tabs component without context",
   "repository": "https://github.com/ZakariaBenali/react-with-tabs.git",
   "author": "ZakariaBenali <benalizakaria.me@gmail.com>",
