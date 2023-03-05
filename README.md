@@ -5,6 +5,7 @@
 React with tabs is a simple and highly customizable HOC (High order components) that allows you to create tabs in seconds, the package also provides custom-built tabs components (which internally use the same HOC).
 
 The idea of creating this package came up to me while developing [nextjs-developer](https://github.com/ZakariaBenali/nextjs-portfolio) open source portfolio, I needed to create a simple tab component for my *Experience Section*, The goal was to add animation on each tab panel, Most external react tabs packages come with built-in style and components and can be challenging to optimize.
+[See Demo](http://react-with-tabs-demo.zakariabenali.me/)
 
 ## Key Features
 
@@ -145,7 +146,9 @@ tabPanel = 'tab-panel',
 ```
 
 
-[See example](https://github.com/ZakariaBenali/react-with-tabs/tree/main/examples/vite-react) for a better demonstration 
+[See example](https://github.com/ZakariaBenali/react-with-tabs/tree/main/examples/vite-react) for a better demonstration
+
+[See Demo](http://react-with-tabs-demo.zakariabenali.me/)
 
 ## License
  This project is licensed under the MIT License - see the  [LICENSE.md](https://github.com/ZakariaBenali/react-with-tabs/blob/main/LICENSE)  file for more details
