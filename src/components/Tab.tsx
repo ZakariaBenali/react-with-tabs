@@ -1,4 +1,4 @@
-import { TabElements } from 'HOC/withTabs';
+import { TabElements } from '../HOC/withTabs';
 import { FC, HTMLAttributes, PropsWithChildren } from 'react';
 
 const Tab: FC<PropsWithChildren<HTMLAttributes<HTMLButtonElement>>> = ({ role, children, ...props }) => {

@@ -1,5 +1,5 @@
-import { joinClassNames } from 'helpers/joinClassNames';
-import { toChildrenArray } from 'helpers/toChildrenArray';
+import { joinClassNames } from '../helpers/joinClassNames';
+import { toChildrenArray } from '../helpers/toChildrenArray';
 import React, { cloneElement, useState } from 'react';
 
 export interface WithTabsProps {

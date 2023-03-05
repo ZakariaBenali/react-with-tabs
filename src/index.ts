@@ -1,2 +1,2 @@
 export * from './components';
-export { withTabs } from 'HOC/withTabs';
+export { withTabs, TabElements } from './HOC/withTabs';
