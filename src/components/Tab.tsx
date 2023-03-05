@@ -5,14 +5,13 @@ import { joinClassNames } from '../helpers/joinClassNames';
 const Tab: FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({ role, className, children, ...props }) => {
 	const classNames = joinClassNames('_react_Tab', className);
 	return (
-		<button className={classNames} {...props}>
+		<button role={TabElements.tab} className={classNames} {...props}>
 			{children}
 		</button>
 	);
 };
 
 Tab.defaultProps = {
-	role: TabElements.tab,
 	type: 'button',
 };
 
