@@ -1,17 +1,19 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/react': ^18.0.27
-  '@types/react-dom': ^18.0.10
-  '@vitejs/plugin-react-swc': ^3.0.0
+  '@types/react': ^18.0.28
+  '@types/react-dom': ^18.0.11
+  '@vitejs/plugin-react-swc': ^3.2.0
   react: ^18.2.0
   react-dom: ^18.2.0
-  typescript: ^4.9.3
-  vite: ^4.1.0
+  react-with-tabs: ^1.0.9
+  typescript: ^4.9.5
+  vite: ^4.1.4
 
 dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-with-tabs: 1.0.9_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
   '@types/react': 18.0.28
@@ -459,6 +461,16 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-with-tabs/1.0.9_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-0veAYPW+A2wK/Dm1cVV4vOWBHEA2cFmJ34E+suNKDQI/oZYVrE5L1VxkbhJ84WTmV0Wx1xtkCjfcsBT/qC1IZw==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react/18.2.0:
