@@ -25,7 +25,6 @@ const withTabs = <T extends WithTabsProps>(WrappedComponent: React.ComponentType
 						const tabRole = tab.props.role;
 						if (tabRole === TabElements.tab) {
 							return cloneElement(tab, {
-								index: j,
 								key: j,
 								onClick: (e: any) => {
 									if (tab.props.onClick) {
@@ -41,7 +40,6 @@ const withTabs = <T extends WithTabsProps>(WrappedComponent: React.ComponentType
 			}
 			if (currentIndex + 1 === i && role === TabElements.tabPanel) {
 				return cloneElement(child, {
-					index: i,
 					key: i,
 				});
 			}
