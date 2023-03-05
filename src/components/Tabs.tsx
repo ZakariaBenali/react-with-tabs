@@ -1,7 +1,7 @@
 import { withTabs } from 'HOC/withTabs';
-import { FC, HTMLAttributes, PropsWithChildren } from 'react';
+import { FC, HTMLAttributes } from 'react';
 
-const TabsComponent: FC<PropsWithChildren<HTMLAttributes<HTMLDivElement>>> = ({ children, ...rest }) => {
+const TabsComponent: FC<HTMLAttributes<HTMLDivElement>> = ({ children, ...rest }) => {
 	return <div {...rest}>{children}</div>;
 };
 
