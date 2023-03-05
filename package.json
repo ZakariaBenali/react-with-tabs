@@ -1,6 +1,6 @@
 {
   "name": "react-with-tabs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A simple and lightweight tabs component without context",
   "repository": "https://github.com/ZakariaBenali/react-with-tabs.git",
   "author": "ZakariaBenali <benalizakaria.me@gmail.com>",
@@ -25,15 +25,15 @@
     "types:check": "tsc --noEmit",
     "build": "microbundle",
     "dev": "microbundle watch",
-    "prepublishOnly" : "pnpm build"
+    "prepublishOnly": "pnpm build"
   },
   "keywords": [
-      "react",
-      "tabs",
-      "react-tabs",
-      "tabs-component",
-      "react-tabs-component",
-      "react-tabs-hoc"
+    "react",
+    "tabs",
+    "react-tabs",
+    "tabs-component",
+    "react-tabs-component",
+    "react-tabs-hoc"
   ],
   "peerDependencies": {
     "react": "^18.2.0",
