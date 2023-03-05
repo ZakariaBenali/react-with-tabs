@@ -13,10 +13,10 @@ export enum TabElements {
 	tabPanel = 'tab-panel',
 }
 
-type WrappedComponentType<T> = T & WithTabsProps;
+type WrappedComponentProps<T> = T & WithTabsProps;
 
 function withTabs<T>(WrappedComponent: React.ComponentType<T>) {
-	return (props: WrappedComponentType<T>) => {
+	return (props: WrappedComponentProps<T>) => {
 		const { selectedClassName, children, ...rest } = props;
 		const [currentIndex, setCurrentIndex] = useState(0);
 		const _children = toChildrenArray(children).map((child, i) => {
@@ -53,7 +53,7 @@ function withTabs<T>(WrappedComponent: React.ComponentType<T>) {
 			}
 			return null;
 		});
-		return <WrappedComponent {...(rest as WrappedComponentType<T>)}>{_children}</WrappedComponent>;
+		return <WrappedComponent {...(rest as WrappedComponentProps<T>)}>{_children}</WrappedComponent>;
 	};
 }
 
