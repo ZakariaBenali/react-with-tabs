@@ -154,6 +154,7 @@ tabPanel = 'tab-panel',
 
  - [ ] Writing tests
  - [ ] Create a more detailed documentation
+ - [ ] Add a github workflow 
 
 ## License
  This project is licensed under the MIT License - see the  [LICENSE.md](https://github.com/ZakariaBenali/react-with-tabs/blob/main/LICENSE)  file for more details
