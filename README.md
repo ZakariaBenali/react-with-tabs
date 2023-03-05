@@ -1,5 +1,5 @@
 
-![npm version](https://badge.fury.io/js/react-with-tabs.svg)
+[![npm version](https://badge.fury.io/js/react-with-tabs.svg)](https://badge.fury.io/js/react-with-tabs)
 
 # React with tabs
 React with tabs is a simple and highly customizable HOC (High order components) that allows you to create tabs in seconds, the package also provides custom-built tabs components (which internally use the same HOC).
@@ -149,6 +149,11 @@ tabPanel = 'tab-panel',
 [See example](https://github.com/ZakariaBenali/react-with-tabs/tree/main/examples/vite-react) for a better demonstration
 
 [See Demo](http://react-with-tabs-demo.zakariabenali.me/)
+
+## Todo
+
+ - [ ] Writing tests
+ - [ ] Create a more detailed documentation
 
 ## License
  This project is licensed under the MIT License - see the  [LICENSE.md](https://github.com/ZakariaBenali/react-with-tabs/blob/main/LICENSE)  file for more details
