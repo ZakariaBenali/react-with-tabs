@@ -1,70 +1,73 @@
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-body  {
-  font-family: sans-serif;
-  margin:0;
-  padding:0;
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 .App {
-  min-height: 100vh;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-ul  {
-  padding:0;
-  margin:0;
+ul {
+	padding: 0;
+	margin: 0;
 }
 
 * {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
-._react_Tabs, .custom-tabs {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+._react_Tabs,
+.custom-tabs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-._react_Tab_List, .custom-tab-list {
-  display:flex;
-  gap:0.625rem;
-  margin-bottom:1.25rem;
+._react_Tab_List,
+.custom-tab-list {
+	display: flex;
+	gap: 0.625rem;
+	margin-bottom: 1.25rem;
 }
 
-._react_Tab, .custom-tab {
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  height: 3.4375rem;
-  width: 10.6875rem;
-  font-size: 1rem;  
-  color: white;
-  background: #1065ED;
-  transition: all 0.3s ease;
+._react_Tab,
+.custom-tab {
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	height: 3.4375rem;
+	width: 10.6875rem;
+	font-size: 1rem;
+	color: white;
+	background: #1065ed;
+	transition: all 0.3s ease;
 }
 
 ._react_Tab:not(._react_Selected_Tab),
 .custom-tab:not(._react_Selected_Tab) {
-  opacity: 0.4;
-  background: #375a94;
+	opacity: 0.4;
+	background: #375a94;
 }
 
 ._react_Tab_Panel,
-.custom-tab-panel  {
-  border:1px solid white;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.875rem;
-  width: 100%;
+.custom-tab-panel {
+	border: 1px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.875rem;
+	width: 100%;
 }
 
 ._react_Tabs {
-  margin-bottom: 3.125rem;
+	margin-bottom: 3.125rem;
 }
