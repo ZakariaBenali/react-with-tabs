@@ -146,3 +146,6 @@ tabPanel = 'tab-panel',
 
 
 [See example](https://github.com/ZakariaBenali/react-with-tabs/tree/main/examples/vite-react) for a better demonstration 
+
+## License
+ This project is licensed under the MIT License - see the  [LICENSE.md](https://github.com/ZakariaBenali/react-with-tabs/blob/main/LICENSE)  file for more details
