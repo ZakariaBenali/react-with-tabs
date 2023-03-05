@@ -27,7 +27,10 @@ const withTabs = <T extends WithTabsProps>(WrappedComponent: React.ComponentType
 							return cloneElement(tab, {
 								index: j,
 								key: j,
-								onClick: () => {
+								onClick: (e: any) => {
+									if (tab.props.onClick) {
+										tab.props.onClick(e);
+									}
 									setCurrentIndex(j);
 								},
 							});
