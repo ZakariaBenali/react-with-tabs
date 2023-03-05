@@ -1,6 +1,6 @@
 {
   "name": "react-with-tabs",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "A simple and lightweight tabs component without context",
   "repository": "https://github.com/ZakariaBenali/react-with-tabs.git",
   "author": "ZakariaBenali <benalizakaria.me@gmail.com>",
@@ -13,7 +13,6 @@
   "files": [
     "dist"
   ],
-  "prepublish": "tsc --noEmit",
   "exports": {
     "require": "./dist/index.cjs",
     "default": "./dist/index.es.js"
@@ -25,7 +24,8 @@
     "format:write": "prettier --write .",
     "types:check": "tsc --noEmit",
     "build": "microbundle",
-    "dev": "microbundle watch"
+    "dev": "microbundle watch",
+    "prepublishOnly" : "pnpm build"
   },
   "keywords": [
       "react",
