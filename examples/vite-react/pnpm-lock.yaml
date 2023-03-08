@@ -6,14 +6,14 @@ specifiers:
   '@vitejs/plugin-react-swc': ^3.2.0
   react: ^18.2.0
   react-dom: ^18.2.0
-  react-with-tabs: ^1.0.10
+  react-with-tabs: ^1.0.11
   typescript: ^4.9.5
   vite: ^4.1.4
 
 dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-with-tabs: 1.0.10_biqbaboplfbrettd7655fr4n2y
+  react-with-tabs: 1.0.11_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
   '@types/react': 18.0.28
@@ -463,8 +463,8 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-with-tabs/1.0.10_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-wQf/r/N8HFjpCO7WQLhVAmuPlZg4Su/fUrajaoe4puu7N2wd4fZR9phV//6a9QmVITmuAzbXMP8fSPesM+wWqg==}
+  /react-with-tabs/1.0.11_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-Nm9I+JA3iIQk5VfKh/Ly2AxD+oxgr7yIj7I0kmDlvvl+K/8nqCNnatR657SZlRBwO1sHjAiO122x9gLEZkn9Vw==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
