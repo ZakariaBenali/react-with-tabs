@@ -8,11 +8,12 @@ export const cloneTab = (
 	handleClick: () => void,
 	selectedClassName?: string,
 ): React.ReactNode => {
+	const key = tab.key ?? index;
 	const tabRole = tab.props.role;
 	const tabClassName = tab.props.className;
 	if (tabRole === TabElements.tab) {
 		return cloneElement(tab, {
-			key: index,
+			key: `tab-${key}`,
 			className: joinClassNames(selectedClassName, tabClassName),
 			onClick: (e: any) => {
 				if (tab.props.onClick) {
