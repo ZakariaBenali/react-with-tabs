@@ -1,16 +1,12 @@
-import { joinClassNames } from '../helpers/joinClassNames';
-import { toChildrenArray } from '../helpers/toChildrenArray';
+import { defaultClassNames } from '../constants/defaults';
+import { TabElements } from '../constants/enums';
+import { cloneTab } from '../utils/cloneTab';
+import { toChildrenArray } from '../utils/toChildrenArray';
 import React, { cloneElement, useState } from 'react';
 
 export interface WithTabsProps {
 	children: React.ReactNode;
 	selectedClassName?: string;
-}
-
-export enum TabElements {
-	tabList = 'tabs',
-	tab = 'tab',
-	tabPanel = 'tab-panel',
 }
 
 type WrappedComponentProps<T> = T & WithTabsProps;
@@ -26,23 +22,16 @@ function withTabs<T>(WrappedComponent: React.ComponentType<T>) {
 				return cloneElement(child, {
 					key: i,
 					children: toChildrenArray(tabs).map((tab, j) => {
-						const tabRole = tab.props.role;
 						const isSelected = j === currentIndex;
-						const selectedClass = isSelected ? selectedClassName ?? '_react_Selected_Tab' : undefined;
-						const tabClassName = tab.props.className;
-						if (tabRole === TabElements.tab) {
-							return cloneElement(tab, {
-								key: j,
-								className: joinClassNames(selectedClass, tabClassName),
-								onClick: (e: any) => {
-									if (tab.props.onClick) {
-										tab.props.onClick(e);
-									}
-									setCurrentIndex(j);
-								},
-							});
-						}
-						return null;
+						const selected = isSelected ? selectedClassName ?? defaultClassNames.selected : undefined;
+						return cloneTab(
+							tab,
+							j,
+							() => {
+								setCurrentIndex(j);
+							},
+							selected,
+						);
 					}),
 				});
 			}

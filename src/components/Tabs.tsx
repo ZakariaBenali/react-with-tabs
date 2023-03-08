@@ -1,9 +1,10 @@
 import { FC, HTMLAttributes } from 'react';
 import { withTabs } from '../HOC/withTabs';
-import { joinClassNames } from '../helpers/joinClassNames';
+import { joinClassNames } from '../utils/joinClassNames';
+import { defaultClassNames } from '../constants/defaults';
 
 const TabsComponent: FC<HTMLAttributes<HTMLDivElement>> = ({ children, className, ...rest }) => {
-	const classNames = joinClassNames('_react_Tabs', className);
+	const classNames = joinClassNames(defaultClassNames.tabs, className);
 	return (
 		<div className={classNames} {...rest}>
 			{children}
