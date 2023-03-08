@@ -35,16 +35,16 @@ Using built-in tabs component:
 import { Tab, TabList, TabPanel, Tabs } from  "react-with-tabs";
 
 const DefaultTabs = () => {
-	return (
-		<Tabs>
-			<TabList>
-			<Tab>Tab 1</Tab>
-				<Tab>Tab 2</Tab>
-			</TabList>
-			<TabPanel>Tab content 1</TabPanel>
-			<TabPanel>Tab content 2</TabPanel>
-		</Tabs>
-	);
+  return (
+    <Tabs>
+      <TabList>
+        <Tab>Tab 1</Tab>
+        <Tab>Tab 2</Tab>
+      </TabList>
+      <TabPanel>Tab content 1</TabPanel>
+      <TabPanel>Tab content 2</TabPanel>
+    </Tabs>
+  );
 };
 export { DefaultTabs };
 ```
@@ -56,29 +56,29 @@ import { TabElements } from  'react-with-tabs';
 import { CustomTabsComponent } from  './CustomTabsComponent';
 
 const  Component = ({ children}) => {
-	return (
-		<div className="custom-tabs">
-			{children}
-		</div>
-	);
+  return (
+    <div className="custom-tabs">
+      {children}
+    </div>
+  );
 };
 const  CustomTabsComponent = withTabs(Component);
 
 export const CustomTabs = () => {
-	return (
-		<CustomTabsComponent>
-			<div className="custom-tab-list" role={TabElements.tabList}>
-				<button className="custom-tab" role={TabElements.tab}>Tab 1</button>
-				<button className="custom-tab" role={TabElements.tab}>Tab 2</button>	
-			</div>
-			<div className="custom-tab-panel" role={TabElements.tabPanel}>
-				Tab Content 1
-			</div>
-			<div className="custom-tab-panel" role={TabElements.tabPanel}>
-				Tab Content 2
-			</div>
-		</CustomTabsComponent>
-	);
+  return (
+    <CustomTabsComponent>
+      <div className="custom-tab-list" role={TabElements.tabList}>
+        <button className="custom-tab" role={TabElements.tab}>Tab 1</button>
+        <button className="custom-tab" role={TabElements.tab}>Tab 2</button>	
+      </div>
+      <div className="custom-tab-panel" role={TabElements.tabPanel}>
+        Tab Content 1
+      </div>
+      <div className="custom-tab-panel" role={TabElements.tabPanel}>
+        Tab Content 2
+      </div>
+    </CustomTabsComponent>
+  );
 };
 ```
 
@@ -87,8 +87,11 @@ The main element in React with tabs is the HOC with tabs which creates tabs, But
 
 ### Tabs (div)
 ---
-All props for a normal div are accepted in addition to: 
+All props for a normal div are accepted in addition to:
+
+
 **selectedClassName: string | undefined**
+
 This is the className for the selected tab 
 > default: _react_Selected_Tab
 
@@ -98,6 +101,9 @@ This is the className for the selected tab
 ### TabList (div)
 ---
 All props for a normal div are accepted in addition to: 
+
+
+
 **className: string  | undefined**:
 > default: _react_Tab_List
 
@@ -108,23 +114,27 @@ All props for a normal div are accepted in addition to:
 
 ### Tab (button)
 ---
-All props for a normal button are accepted in addition to: 
+All props for a normal button are accepted in addition to:
+
+
+
 **className: string  | undefined**:
-default: _react_Tab
+> default: _react_Tab
 
 **role: string | undefined**:
-default: tab
+> default: tab
 
 🟥 **Important**: Do not change the role since it will affect the tabs.
 
 ### TabPanel (div)
+All props for a normal div are accepted in addition to:
 
-All props for a normal div are accepted in addition to: 
+
 **className: string  | undefined**:
-default: _react_Tab_Panel
+> default: _react_Tab_Panel
 
 **role: string | undefined**:
-default: tab-panel
+> default: tab-panel
 
 🟥 **Important**: Do not change the role since it will affect the tabs.
 
